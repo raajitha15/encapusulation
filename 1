@@ -1,0 +1,29 @@
+/* Program to demostrate the use of encapsulation in java
+encapuslation : the process of wrapping the data and methods togerther
+as a single unit.
+how to achieve encapusulation?
+Ans: 1. make the class variable private.
+     2. create setter method and make the setter public.
+	 3. create getter method and make the getter public.
+	 4. take another class to access the class variable of the previous class
+	 without using inheritances(you can also try with inheritances)*/
+
+class Encap1 
+{
+	private int n=20;//securing the data by declaring variable as private
+}
+
+class TestLead
+{
+	public static void main(String[] args) 
+	{
+		Encap1 e=new Encap1();
+		System.out.println(e.n);
+			
+	}
+}
+
+/*n has private access in Encap1
+                System.out.println(e.n);*/
+				/*if anyone will want to access the data then he/she should access the data
+only by the method which is declared by the classname*/
